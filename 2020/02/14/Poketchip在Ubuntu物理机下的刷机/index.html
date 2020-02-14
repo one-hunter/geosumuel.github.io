@@ -30,7 +30,7 @@
 <meta property="og:description" content="前言Pocketchip 是NextTingCo出的一款便携式开源Linux计算机，有着这qwerty键盘和一块电阻屏，我觉得是非常不错的一款Linux终端，可以当做开源掌机玩。随着NextTingCo的倒闭，，论坛的关闭，网上的资源越来越少，中文教程更是少之又少，所以我将我研究出的Pocketchip 的一些玩法在整理成一系列小文章，发布在这里，大家一起探讨。 作为一款Linux计算机，在配">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-14T10:45:19.000Z">
-<meta property="article:modified_time" content="2020-02-14T11:18:08.097Z">
+<meta property="article:modified_time" content="2020-02-14T11:22:12.290Z">
 <meta property="article:author" content="Samuel">
 <meta property="article:tag" content="Pocketchip">
 <meta property="article:tag" content="flash">
@@ -208,7 +208,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-02-14 18:45:19 / 修改时间：19:18:08" itemprop="dateCreated datePublished" datetime="2020-02-14T18:45:19+08:00">2020-02-14</time>
+              <time title="创建时间：2020-02-14 18:45:19 / 修改时间：19:22:12" itemprop="dateCreated datePublished" datetime="2020-02-14T18:45:19+08:00">2020-02-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,11 +244,10 @@
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Pocketchip 是NextTingCo出的一款便携式开源Linux计算机，有着这qwerty键盘和一块电阻屏，我觉得是非常不错的一款Linux终端，可以当做开源掌机玩。随着NextTingCo的倒闭，，论坛的关闭，网上的资源越来越少，中文教程更是少之又少，所以我将我研究出的Pocketchip 的一些玩法在整理成一系列小文章，发布在这里，大家一起探讨。</p>
 <p>作为一款Linux计算机，在配置的时候一定会出现这样那样的错误, 系统崩溃在所难免，所以在这个系列开始我先说说如何刷机。由于我平常主要使用MacOS，但是我也在Ubuntu 16.04上刷过机，这一部分我先讲讲在Ubuntu上的刷机过程。我使用的是办公室的Ubuntu16.04物理机刷机的，对于虚拟机环境我在后面会单独出一篇。</p>
-<h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><ul>
-<li>下载刷机工包<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir pocketchip_flash</span><br><span class="line">$ <span class="built_in">cd</span> pocketchip_flash</span><br><span class="line">$ sudo apt-get install git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/Project-chip-crumbs/CHIP-tools.git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/Project-chip-crumbs/CHIP-SDK.git</span><br></pre></td></tr></table></figure>
-<a id="more"></a></li>
-<li>下载Image文件</li>
-</ul>
+<h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><p>1.下载刷机工具</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir pocketchip_flash</span><br><span class="line">$ <span class="built_in">cd</span> pocketchip_flash</span><br><span class="line">$ sudo apt-get install git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/Project-chip-crumbs/CHIP-tools.git</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/Project-chip-crumbs/CHIP-SDK.git</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>2.下载Image文件</p>
 <p>下载地址  <a href="https://archive.org/details/C.h.i.p.FlashCollection" target="_blank" rel="noopener">https://archive.org/details/C.h.i.p.FlashCollection</a></p>
 <p>下载其中的<code>flash-collection.zip</code>文件，里面包含了所有Image，解压到flash-collection</p>
 <h2 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h2><p>1.先安装库</p>
